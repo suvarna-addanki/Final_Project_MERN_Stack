@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It is a full stack contact manager application that enables users to easily store and find contact information, such as names, email addresses, and phone numbers. In order to access the application, the user must first create an account. With access to an account, the user is able sign in to view their existing contacts, add a new contact, delete, edit and update any existing contacts.
 
-## Available Scripts
+The application also uses private routes and JWT authentication to authorize individual users, so that they can safely register, sign in, and log out of the application.
 
-In the project directory, you can run:
+# User Story
 
-### `npm start`
+AS a user :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I WANT to store and manage my contacts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+SO THAT I can easily access information.
 
-### `npm test`
+# Features of the Application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+GIVEN a contact management application
+WHEN I register an account
+THEN I am given private access to the application.
 
-### `npm run build`
+WHEN I log into the account
+THEN I am presented with the welcome message.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+WHEN I click on the create link on the navbar, fill out the form and click on the Add Contact button,
+THEN I will have stored a new contact.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+WHEN I click on any saved contact then a modal pops up with
+EDIT, DELETE and CLOSE options that I can choose from.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+WHEN I click on the Delete button of a saved contact,
+THEN I will have deleted that contact permanently from my stored  contacts.
 
-### `npm run eject`
+WHEN I click on the Edit button of a saved contact,
+THEN I will be able to edit and update that contact's information.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+WHEN I input characters into the Search Contacts field,
+THEN I can filter through the contacts based on those characters.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+WHEN I click on the Logout button on the navbar,
+THEN I will be logged out of the application and be redirected to the login page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Deployed link:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# Technologies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Express.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+bcrypt
 
-### Code Splitting
+JSON Web Tokens
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Mongoose
 
-### Analyzing the Bundle Size
+Node.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+React
 
-### Making a Progressive Web App
+React Hooks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+MONGODB
 
-### Advanced Configuration
+# Installations: npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+bcrypt
 
-### Deployment
+concurrently
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+express
 
-### `npm run build` fails to minify
+mongoose
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+cors
+
+react-toastify
+
+react-bootstrap
+
+jsonwebtoken
+
+react-router-dom
+
+morgan 
+
+joi
+
+
+
+
