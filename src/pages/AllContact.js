@@ -13,26 +13,29 @@ const AllContact = () => {
   const [contacts, setContacts] = useState([]);
   const [searchInput, setSearchInput] = useState("");
 
-  useEffect(async () => {
+  useEffect( () => {
     setLoading(true);
-    try {
-      const res = await fetch(`http://localhost:8000/api/mycontacts`, {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-      });
-      const result = await res.json();
-      if (!result.error) {
-        setContacts(result.contacts);
-        setLoading(false);
-      } else {
-        console.log(result);
-        setLoading(false);
-      }
-    } catch (err) {
-      console.log(err);
+    const allcontacts = async() => {
+        try {
+            const res = await fetch(`http://localhost:8000/api/mycontacts`, {
+              method: "GET",
+              headers: {
+                Authorization: `Bearer ${localStorage.getItem("token")}`,
+              },
+            });
+            const result = await res.json();
+            if (!result.error) {
+              setContacts(result.contacts);
+              setLoading(false);
+            } else {
+              console.log(result);
+              setLoading(false);
+            }
+          } catch (err) {
+            console.log(err);
+          }
     }
+    allcontacts()
   }, []);
 
   const deleteContact = async (id) => {

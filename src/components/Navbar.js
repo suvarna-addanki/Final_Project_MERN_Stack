@@ -34,12 +34,12 @@ const Navbar = ({ title = "Contacts" }) => {
               <>
                 <li className="nav-item">
                   <Link to="/mycontacts">
-                    <a className="nav-link">All Contacts</a>
+                    <span className="nav-link">All Contacts</span>
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/create">
-                    <a className="nav-link">Create</a>
+                    <span className="nav-link">Create</span>
                   </Link>
                 </li>
                 <li
@@ -58,12 +58,12 @@ const Navbar = ({ title = "Contacts" }) => {
               <>
                 <li className="nav-item">
                   <Link to="/login">
-                    <a className="nav-link">Login</a>
+                    <span className="nav-link">Login</span>
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/register">
-                    <a className="nav-link">Register</a>
+                    <span className="nav-link">Register</span>
                   </Link>
                 </li>
               </>

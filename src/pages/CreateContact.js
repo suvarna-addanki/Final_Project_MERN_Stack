@@ -114,7 +114,7 @@ const CreateContact = () => {
         />
       </form>
       <button>
-        <Link to="/" BACK ></Link>
+        <Link to="/" >HOME</Link>
       </button>
     </>
   );
