@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
 import ToastContext from "../context/ToastContext";
 
-const Navbar = ({ title = "CMS" }) => {
+const Navbar = ({ title = "Contacts" }) => {
   const navigate = useNavigate();
   const { user, setUser } = useContext(AuthContext);
   const { toast } = useContext(ToastContext);
@@ -11,9 +11,10 @@ const Navbar = ({ title = "CMS" }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container-fluid">
-        <Link to="/">
+        {/* <Link to="/">
           <a className="navbar-brand">MANAGE YOUR CONTACTS</a>
-        </Link>
+        </Link> */}
+            MANAGE YOUR CONTACTS
 
         <button
           className="navbar-toggler"

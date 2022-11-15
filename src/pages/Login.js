@@ -43,7 +43,7 @@ const Login = () => {
             type="email"
             className="form-control"
             id="emailInput"
-            aria-describedby="emailHelp"
+            // aria-describedby="emailHelp"
             name="email"
             value={credentials.email}
             onChange={handleInputChange}

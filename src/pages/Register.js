@@ -70,7 +70,7 @@ const Register = () => {
             type="email"
             class="form-control"
             id="emailInput"
-            aria-describedby="emailHelp"
+            //aria-describedby="emailHelp"
             name="email"
             value={credentials.email}
             onChange={handleInputChange}
