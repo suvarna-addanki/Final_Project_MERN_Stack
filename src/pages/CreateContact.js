@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
 import ToastContext from "../context/ToastContext";
 
@@ -113,6 +113,9 @@ const CreateContact = () => {
           className="btn btn-info my-2"
         />
       </form>
+      <button>
+        <Link to="/" BACK ></Link>
+      </button>
     </>
   );
 };
