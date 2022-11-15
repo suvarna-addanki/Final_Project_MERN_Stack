@@ -3,20 +3,21 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ToastContext from "./ToastContext";
+import axios from "axios";
 
 const AuthContext = createContext();
 
-// export const AuthContextProvider = ({ children }) => {
-//   const { toast } = useContext(ToastContext);
-//   const navigate = useNavigate();
-//   const location = useLocation();
+export const AuthContextProvider = ({ children }) => {
+  const { toast } = useContext(ToastContext);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-//   const [user, setUser] = useState(null);
-//   const [error, setError] = useState(null);
+  const [user, setUser] = useState(null);
+  const [error, setError] = useState(null);
 
-//   useEffect(() => {
-//     checkUserLoggedIn();
-//   }, []);
+  useEffect(() => {
+    checkUserLoggedIn();
+  }, []);
 
   // check if the user is logged in.
   const checkUserLoggedIn = async () => {
