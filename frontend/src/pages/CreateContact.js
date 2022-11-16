@@ -49,7 +49,7 @@ const CreateContact = () => {
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="nameInput" className="form-label mt-4">
-            Name Of Person
+            Name Of the Person
           </label>
           <input
             type="text"
@@ -58,13 +58,13 @@ const CreateContact = () => {
             name="name"
             value={userDetails.name}
             onChange={handleInputChange}
-            placeholder="Joe"
+            placeholder="name"
             required
           />
         </div>
         <div className="form-group">
           <label htmlFor="addressInput" className="form-label mt-4">
-            Address Of Person
+            Address Of the Person
           </label>
           <input
             type="text"
@@ -73,13 +73,13 @@ const CreateContact = () => {
             name="address"
             value={userDetails.address}
             onChange={handleInputChange}
-            placeholder="Freedomst 05, Brunswick"
+            placeholder="address"
             required
           />
         </div>
         <div className="form-group">
           <label htmlFor="emailInput" className="form-label mt-4">
-            Email Of Person
+            Email Of the Person
           </label>
           <input
             type="email"
@@ -94,7 +94,7 @@ const CreateContact = () => {
         </div>
         <div className="form-group">
           <label htmlFor="phoneInput" className="form-label mt-4">
-            Phone Number Of Person
+            Phone Number Of the Person
           </label>
           <input
             type="number"
