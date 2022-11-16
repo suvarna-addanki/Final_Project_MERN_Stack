@@ -14,7 +14,11 @@ const Navbar = ({ title = "Contacts" }) => {
         {/* <Link to="/">
           <a className="navbar-brand"></a>
         </Link> */}
-           <span> CENTRAL CONTACT</span>
+           <span> CENTRAL CONTACT 
+            (A PLACE WHERE YOU CAN STORE ALL YOUR CONTACTS)
+            </span>
+           {/* <br></br>
+           <span> (A PLACE WHERE YOU CAN STORE ALL YOUR CONTACTS)</span> */}
 
         <button
           className="navbar-toggler"
