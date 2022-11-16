@@ -3,6 +3,7 @@ import { Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Spinner from "../components/Spinner";
 import ToastContext from "../context/ToastContext";
+import axios from 'axios'
 
 const AllContact = () => {
   const { toast } = useContext(ToastContext);
@@ -12,29 +13,48 @@ const AllContact = () => {
   const [modalData, setModalData] = useState({});
   const [contacts, setContacts] = useState([]);
   const [searchInput, setSearchInput] = useState("");
+  
+  const axiosAuth = axios.create({
+    baseURL: "http://localhost:8000/api",
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  })
 
+  const allcontacts = async () => {
+    try { 
+      const response = await axiosAuth.get('/mycontacts')
+      console.log(response)
+    } catch(error){
+      console.log(error)
+    }
+  }
   useEffect( () => {
     setLoading(true);
-    const allcontacts = async() => {
-        try {
-            const res = await fetch(`http://localhost:8000/api/mycontacts`, {
-              method: "GET",
-              headers: {
-                Authorization: `Bearer ${localStorage.getItem("token")}`,
-              },
-            });
-            const result = await res.json();
-            if (!result.error) {
-              setContacts(result.contacts);
-              setLoading(false);
-            } else {
-              console.log(result);
-              setLoading(false);
-            }
-          } catch (err) {
-            console.log(err);
-          }
-    }
+    // const allcontacts = async() => {
+    //     try {
+    //       ;
+
+
+        
+    //         // const res = await fetch(`http://localhost:8000/api/mycontacts`, {
+    //         //   method: "GET",
+    //         //   headers: {
+    //         //     Authorization: `Bearer ${localStorage.getItem("token")}`,
+    //         //   },
+    //         // });
+    //         const result = await res.json();
+    //         if (!result.error) {
+    //           setContacts(result.contacts);
+    //           setLoading(false);
+    //         } else {
+    //           console.log(result);
+    //           setLoading(false);
+    //         }
+    //       } catch (err) {
+    //         console.log(err);
+    //       }
+    // }
     allcontacts()
   }, []);
 
