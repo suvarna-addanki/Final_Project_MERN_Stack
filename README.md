@@ -1,5 +1,5 @@
 # Description
-Central Contact is a full stack contact manager application that enables users to easily store and find contact information, such as names, email addresses, and phone numbers. In order to access the application, the user must first create an account. With access to an account, the user is able sign in to view their existing contacts, add a new contact, delete, edit and update any existing contacts.
+Central Contact is a MERN full stack contact manager application that enables users to easily store and find contact information, such as names, email addresses, and phone numbers. In order to access the application, the user must first create an account. With access to an account, the user is able sign in to view their existing contacts, add a new contact, delete, edit and update any existing contacts.
 
 The application also uses private routes and JWT authentication to authorize individual users, so that they can safely register, sign in, and log out of the application.
 
