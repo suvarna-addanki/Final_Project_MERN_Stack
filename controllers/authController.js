@@ -4,7 +4,9 @@ const jwt = require("jsonwebtoken");
 const auth = require("../middlewares/auth");
 const User = require("../models/User");
 
-
+const testroute = (req, res) => {
+  res.send("hello")
+}
 
 const register = async (req, res) => {
     const { name, email, password } = req.body;
@@ -103,4 +105,4 @@ const register = async (req, res) => {
     }
   };
 
-  module.exports ={ register, login}
+  module.exports ={ register, login, testroute}
