@@ -1,5 +1,5 @@
 # Description
-Central Contact is a MERN full stack contact manager application that enables users to easily store and find contact information, such as names, email addresses, and phone numbers. In order to access the application, the user must first create an account. With access to an account, the user is able sign in to view their existing contacts, add a new contact, delete, edit and update any existing contacts.
+Central Contact is a MERN full stack contact manager application that enables users to easily store and find contact information, such as name, address, email address, and phone number. In order to access the application, the user must first create an account by clicking on the register in the navbar. Once logged into the account, the user is able to view their existing contacts, add a new contact, delete, edit and update any existing contacts.
 
 The application also uses private routes and JWT authentication to authorize individual users, so that they can safely register, sign in, and log out of the application.
 
@@ -39,6 +39,10 @@ WHEN I click on the Logout button on the navbar,
 THEN I will be logged out of the application and be redirected to the login page.
 
 # Deployed link:
+
+https://steady-gelato-032695.netlify.app  (Frontend)
+
+ https://fair-tan-shrimp-tie.cyclic.app    (Backend)
 
 
 # Technologies
