@@ -14,7 +14,7 @@ const Navbar = ({ title = "Contacts" }) => {
         {/* <Link to="/">
           <a className="navbar-brand"></a>
         </Link> */}
-           
+           <span> CENTRAL CONTACT</span>
 
         <button
           className="navbar-toggler"
